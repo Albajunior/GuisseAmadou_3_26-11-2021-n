@@ -103,6 +103,7 @@ body {
   font-size: inherit;
   text-align: center;
   max-width: 372px;
+  margin-top: -12px;
 }
 
 .presentaion button {
@@ -259,6 +260,10 @@ body {
 .detail p {
   margin-top: -8px;
   font-size: 19px;
+}
+
+.etoile {
+  margin-top: 4px;
 }
 
 .et1 i {
