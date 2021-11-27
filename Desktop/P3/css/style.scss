@@ -14,12 +14,16 @@ $vert:#99E2D0;
     font-family: "Shrikhand";
     src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 }
+#all
+{
+    background-color: red;
+}
+
 body
 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-width: 300px;
-    max-width: 870px;
 }
 
 .logo
@@ -28,6 +32,7 @@ body
     display: flex;
     justify-content: center;
 }
+
 .logo img
 {
     width: 50%;
@@ -76,7 +81,9 @@ body
 .presentaion
 {
     background-color: #e3e3e38f;
-    margin-top: -24px;
+    margin-top: -24px;  
+    display: flex;
+    justify-content: center;
 }
 
 .presentaion h3
@@ -127,6 +134,7 @@ body
 .contenup2
 {
     display: block;
+    max-width: 980px;
 }
 .filters
 {
@@ -188,7 +196,7 @@ body
     background-color: #F2F2F2;
     padding-left: 5%;
     padding-top: 25px;
-    margin-top: 70px;
+    margin-top: 60px;
     padding-bottom: 35px;
 }
 
@@ -199,7 +207,7 @@ body
 
 #contain
 {
-   
+   max-width: 1000px;
 }
 
 .contenup1
@@ -216,25 +224,17 @@ body
     position: absolute;
     margin-top: -179px;
     margin-left: 65%;
-}
-.titreetcoeur
-{
-    display: flex;
-}
-
-.detail i
-{
-    display: flex;
-    border: 1px;
-    color: #9356DC;
-    margin: -30px 8% 0 85%;
-    font-size: x-large;
+    border-radius: 3px;
+    width: 81px;
+    height: 30px;
+    background-color: #81dfc9;
+    border: none;
+    color: #31a283;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.detail i:hover
-{
-   
-}
+
 .image
 {
     border-top-left-radius: 13px;
@@ -251,8 +251,11 @@ body
 
 .detail
 {
+    display: flex;
+    justify-content: space-between;
     height: 64px;
     padding-top: 1%;
+    margin-right: 7%; 
     margin-left: 3%; 
 }
 
@@ -268,12 +271,31 @@ body
     font-size: 19px;
 }  
 
+.et1 i 
+{
+    display: flex;
+    color: black;
+    margin-top: 7px;
+    font-size: 28px;
+} 
+
+.et2
+{
+  
+  color: transparent;
+  margin-top: -30.5px;
+  font-size: 29px;
+  &:hover {
+         color: #9356DC; 
+         cursor: pointer;            
+        }
+
+}
 
 footer
 {
     background-color: #2f2e2e;
-    font-size: 17px;
-    width: 100%;
+    font-size: 17px;  
 }
 
 .contenufooter
@@ -289,6 +311,7 @@ footer
     font-family: 'Shrikhand';
     font-size: 23px;
 }
+
 .f1
 {
     display: block ruby;
@@ -311,8 +334,13 @@ footer i
     font-weight: 931;
     margin-right: 8px;
 }
+
 @media all and (min-width: 600px)
 {
+    .contenup1 button
+    {
+        margin-left: 70%;
+    }
 
     .filter
     {
@@ -323,6 +351,10 @@ footer i
 
 @media all and (min-width: 700px)
 {
+    .contenup1 button
+    {
+        margin-left: 29%;
+    }
 
     .contenup2
     {
@@ -342,7 +374,6 @@ footer i
     .partie3
     {
         padding-left: 3%;
-        margin-right: -2%;
     }
     #contain
     {
@@ -364,15 +395,25 @@ footer i
 
     }
 
+    .partie2 h4 {
+        margin-left: 2%;
+        font-size: 21px;
+    }
+    
+    .contenup1 button
+    {
+        margin-left: 29%;
+    }
+
     footer 
     {
-        max-width: 792px;
-        padding-left: 3%;
+       
     }
 }
 
 @media all and (max-width: 352px)
 {
+
     .presentaion h3 
     {
         min-width: 246px;
@@ -382,5 +423,97 @@ footer i
     {
         margin-left: 2px;
         margin-right: 3px;
+    }
+
+    .contenup1 button
+    {
+        margin-left: 60%;
+    }
+}
+
+@media all and (min-width: 1000px)
+{
+
+    .logo img {
+        width: 45%;
+    }
+
+    .partie2
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .titrep2
+    {
+        margin-right: 700px;
+        margin-left: -10%;
+    }
+
+    .partie3
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #contain
+    {
+        margin-left: -1%;
+    }
+    .titrep3
+    {
+        margin-right: 700px;
+        margin-left: -15%;
+    }
+
+    .contenup1 button
+    {
+        margin-left: 321px;
+    }
+
+    .contenup1
+    {
+        
+    }
+
+    .contenufooter
+    {
+        padding-top: 10px;
+        margin-left: 5%;
+        color: white;
+        padding-bottom: 20px;
+        display: flex;  
+    }
+
+    .contenufooter img 
+    {
+        width: 20%;
+    }
+    
+    .contenufooter h4
+    {
+        font-size: 23px;
+    }
+    
+    .f1
+    {
+        margin-top: 0px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    .f2
+    {
+        margin-top: 0px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    .mention p
+    {
+        margin-top: 17px;
+        margin-right: 30px;
     }
 }
