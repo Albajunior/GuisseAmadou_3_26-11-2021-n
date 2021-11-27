@@ -1,0 +1,236 @@
+
+@font-face
+{
+    
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+@font-face
+{
+    
+    font-family: "Shrikhand";
+    src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-width: 300px;
+    max-width: 870px;
+}
+
+header
+{
+    display: flex;
+}
+
+header a
+{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 9px;
+    color: black;
+    font-size: 13px;
+}
+
+.logo
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.logo img
+{
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 25%;
+    margin-top: 5px;
+}
+
+.imagemenu img
+{
+    height: 290px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: -100px;
+}
+
+.titrep3
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titrep3 h1
+{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bold;   
+}
+.titrep3 i
+{
+    margin-right: 10%;
+    font-size: 29px;
+    margin-top: 13px;
+}
+.partie3
+{
+    background-color: #F2F2F2;
+    padding-left: 5%;
+    padding-top: 25px;
+    margin-top: 42px;
+    padding-bottom: 35px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    position: relative;
+}
+
+.titrep3
+{
+    
+}
+
+#contain
+{
+   
+}
+
+.entree 
+{
+    font-size: medium;
+    
+}
+
+.contenup1
+{
+   background-color: white; 
+   width: 95%;
+   margin-bottom: 23px;
+   box-shadow: 0px 0px 8px #cdcdcd;
+   border-radius: 15px;
+}
+
+.titreetcoeur
+{
+    display: flex;
+}
+
+.detail b
+{
+    display: flex;
+    border: 1px;
+    color: black;
+    margin: -30px 8% 0 85%;
+    font-size: x-large;
+}
+
+.detail b:hover
+{
+    background-color: #9356DC;
+}
+
+.detail
+{
+    height: 64px;
+    padding-top: 1%;
+    margin-left: 3%; 
+}
+
+.detail h3
+{
+   font-size: 17px;
+   margin-top: 2%;
+}
+
+.detail p
+{
+    margin-top: -8px;
+    font-size: 19px;
+} 
+
+.partie3 button
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    height: 45px;
+    border-radius: 15px;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    background-color: #dd30ac;
+    color: white;
+    font-size: 16px;
+    max-width: 280px;
+}
+
+footer
+{
+    background-color: #2f2e2e;
+    font-size: 17px;
+    width: 100%;
+}
+
+.contenufooter
+{
+    padding-top: 10px;
+    margin-left: 5%;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.contenufooter h4
+{
+    font-family: 'Shrikhand';
+    font-size: 23px;
+}
+.f1
+{
+    display: block ruby;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.f2
+{
+    display: block ruby;
+}
+
+.mention p
+{
+    margin-top: -3px;
+    margin-bottom: -6px;
+}
+footer i
+{
+    font-weight: 931;
+    margin-right: 8px;
+}
+@media all and (min-width: 600px)
+{
+
+    .filter
+    {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+@media all and (min-width: 700px)
+{
+
+   
+}
+
+@media all and (min-width: 860px)
+{
+
+    footer 
+    {
+        max-width: 792px;
+        padding-left: 3%;
+    }
+}
