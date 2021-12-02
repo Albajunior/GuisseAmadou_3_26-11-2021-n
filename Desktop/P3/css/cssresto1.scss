@@ -17,7 +17,7 @@ body
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-width: 300px;
-    max-width: 870px;
+   
 }
 
 header
@@ -43,8 +43,8 @@ header a
 }
 .logo img
 {
-    width: 50%;
-    margin-left: 5%;
+    width: 45%;
+    margin-left: 25%;
     margin-right: 25%;
     margin-top: 5px;
 }
@@ -86,6 +86,7 @@ header a
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     position: relative;
+    max-width: 1250px;
 }
 
 .titrep3
@@ -101,56 +102,270 @@ header a
 .entree 
 {
     font-size: medium;
-    
+    width: min-content;
+    margin-bottom: 20px;   
 }
+
+.entree::after
+{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #99e2d0;
+    position: absolute;
+    z-index: 20;
+    left: 5%;
+    top: 114px;
+}    
+
+.entree2::after
+{
+    content: '';
+    width: 39px;
+    height: 4px;
+    background: #99e2d0;
+    position: absolute;
+    z-index: 20;
+    left: 5%;
+    top: 410px;
+}
+
+.entree3::after
+{
+    content: '';
+    width: 47px;
+    height: 4px;
+    background: #99e2d0;
+    position: absolute;
+    z-index: 20;
+    left: 5%;
+    bottom: 399px;
+}
+
+@-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+  
+  .effet-opacity {
+    -webkit-animation: opacity 1s both;
+            animation: opacity 1s both;
+  }
+  
+ .case1
+ {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+ }
+
+ .case1
+ {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+ }
+
+ .case3
+ {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+ }
+
+ .case4
+ {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+ }
+
+ .case5
+ {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+ }
+
+ .case6
+ {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+ }
+
+ .case7
+ {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+ }
+
+ .case8
+ {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+ }
+
+ .case9
+ {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+ }
 
 .contenup1
 {
+   box-shadow: 1px 1px 9px 5px #bcbcbc;
    background-color: white; 
    width: 95%;
    margin-bottom: 23px;
    box-shadow: 0px 0px 8px #cdcdcd;
    border-radius: 15px;
+   display: flex;
+   &:hover
+   {
+    background-color: red;
+
+   }
 }
 
-.titreetcoeur
+
+@keyframes myAnim {
+    0% {
+      transform: scaleX(0.4);
+      transform-origin: 100% 100%;
+    }
+  
+    100% {
+      transform: scaleX(1);
+      transform-origin: 100% 100%;
+    }
+  }
+
+  .contenup1:hover
+  {
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+
+.contenup1:hover .validation
+{
+   display: flex;
+  transition: 2s;
+   background-color: #99e2d0;
+   width: 70px;  
+   animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.contenup1:hover .validation i
 {
     display: flex;
 }
-
-.detail b
-{
-    display: flex;
-    border: 1px;
-    color: black;
-    margin: -30px 8% 0 85%;
-    font-size: x-large;
-}
-
-.detail b:hover
-{
-    background-color: #9356DC;
-}
-
 .detail
 {
+    width: 100%;
     height: 64px;
-    padding-top: 1%;
     margin-left: 3%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu
+{
+    margin-top: 30px;
+    margin-left: 3%;
 }
 
-.detail h3
+.menu b
 {
-   font-size: 17px;
-   margin-top: 2%;
+   font-size: 19px;
 }
 
-.detail p
+.menu p
 {
-    margin-top: -8px;
+    white-space: nowrap;
     font-size: 19px;
+    margin-top: -5px;
+    overflow: hidden;
 } 
 
+.menu h4
+{
+    white-space: nowrap;
+    font-size: 19px;
+    margin-top: -18px;
+    font-weight: inherit;
+    overflow: hidden;
+} 
+
+.pricemenu 
+{
+    font-size: 16px;
+    margin-right: 7%;
+}
+
+.contenup1:hover .pricemenu
+{
+    margin-right: 3%;
+}
+.validation
+{   
+    display: none;
+    background-color: #99e2d0;
+    display: flex;
+    width: 0%;  
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;  
+    margin-right: -1%;   
+}
+
+.validation i
+{
+    display: none;
+    -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+    -webkit-animation: rotate 0.5s both;
+          animation: rotate 0.5s both;    
+    align-items: center;
+    margin-left: 22%;
+    font-size: x-large;
+    color: white;    
+    
+}
+
+@-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+
+.validation
+{
+   
+}
 .partie3 button
 {
     margin-left: 25%;
@@ -161,15 +376,23 @@ header a
     width: 50%;
     margin-top: 15px;
     margin-bottom: 35px;
-    background-color: #dd30ac;
+    background:linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
     color: white;
     font-size: 16px;
     max-width: 280px;
 }
 
+.partie3 button:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 5px 0px rgba(187, 31, 178, 0.6);
+}
+
 footer
 {
-    background-color: #2f2e2e;
+    background-color: #353535;
     font-size: 17px;
     width: 100%;
 }
@@ -209,28 +432,140 @@ footer i
     font-weight: 931;
     margin-right: 8px;
 }
-@media all and (min-width: 600px)
-{
 
-    .filter
-    {
-        margin-left: 45px;
-        margin-right: 45px;
+@media all and (min-width: 1000px)
+{
+    .logo img {
+        width: 23%;
+        height: 43px;
     }
+
+    #contain
+    {
+        display: ruby;
+        width: 100%;
+    }
+
+    .entree::after
+    {
+        left: 6%;
+        top: 128px;
+    }
+
+    .entree2::after
+    {
+        left: 37.2%;
+        top: 128px;
+    }
+
+    .entree3::after
+    {
+        left: 68.7%;
+        top: 128px;
+    }
+    
+    .p1
+    {
+        width: 31%;
+        margin-right: 2%;
+    }
+
+    .p2
+    {
+        width: 31%;
+        margin-right: 2%;
+    }
+
+    .p3
+    {
+        width: 31%;
+    }
+
+    .partie3 button {
+        margin-left: 31%;}
+    
+    .partie3
+    {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .contenup1:hover .validation 
+    { 
+        width: 60px;
+    }    
 }
 
 @media all and (min-width: 700px)
 {
 
+    .logo img 
+    {
+        width: 33%;
+    }
    
 }
 
 @media all and (min-width: 860px)
 {
 
+    .logo img 
+    {
+        width: 27%;
+    }
+
     footer 
     {
-        max-width: 792px;
+        
         padding-left: 3%;
     }
 }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-11-30 0:22:41
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(-100px);
+    }
+    100% {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(10px);
+    }
+  }
+  
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2021-11-30 1:23:19
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+
+  

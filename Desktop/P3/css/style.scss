@@ -35,7 +35,7 @@ body
 
 .logo img
 {
-    width: 50%;
+    width: 45%;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 5px;
@@ -115,10 +115,15 @@ body
     width: 50%;
     margin-top: 15px;
     margin-bottom: 35px;
-    background: linear-gradient(170deg, rgba(221,48,196,1) 19%, rgba(147,86,220,1) 73%); 
+    background:linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
     color: white;
     font-size: 16px;
     max-width: 280px;
+}
+
+.presentaion button:hover
+{
+  background-color: black;
 }
 
 .partie2 h4
@@ -216,8 +221,15 @@ body
    background-color: white; 
    width: 95%;
    margin-bottom: 23px;
-   box-shadow: 0px 0px 8px #cdcdcd;
+   box-shadow: 0px 0px 8px 5px #cdcdcd;
    border-radius: 15px;
+   cursor: pointer;
+}
+
+.contenup1:hover
+{
+    transform: scale(1.03);
+   
 }
 
 .contenup1 button
@@ -287,15 +299,21 @@ body
 
 .et2
 {
-  
   color: transparent;
   margin-top: -30.5px;
   font-size: 29px;
-  &:hover {
-         color: #9356DC; 
-         cursor: pointer;            
-        }
+}
 
+.et2:hover
+{
+   
+        color: #9356DC; 
+        cursor: pointer;            
+ 
+}
+
+.et2:hover .et1 i{
+    color: white;
 }
 
 footer
@@ -303,11 +321,6 @@ footer
     background-color: #2f2e2e;
     font-size: 17px;  
 }
-
-.contenufooter img 
-    {
-        width: 50%;
-    }
 
 .contenufooter
 {
@@ -321,6 +334,18 @@ footer
 {
     font-family: 'Shrikhand';
     font-size: 23px;
+}
+
+.titrefooter 
+{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 20px;    
+}
+
+.titrefooter a
+{
+    text-decoration: none;
 }
 
 .f1
@@ -340,6 +365,13 @@ footer
     margin-top: -3px;
     margin-bottom: -6px;
 }
+
+.contact a
+{
+    text-decoration: none;
+    color: white;
+}
+
 footer i
 {
     font-weight: 931;
@@ -362,6 +394,10 @@ footer i
 
 @media all and (min-width: 700px)
 {
+    .logo img 
+    {
+        width: 33%;
+    }
     .contenup1 button
     {
         margin-left: 29%;
@@ -405,7 +441,10 @@ footer i
     {
 
     }
-
+    .logo img 
+    {
+        width: 27%;
+    }
     .partie2 h4 {
         margin-left: 2%;
         font-size: 21px;
@@ -446,7 +485,8 @@ footer i
 {
 
     .logo img {
-        width: 45%;
+        width: 23%;
+        height: 43px;
     }
 
     .partie2
@@ -510,21 +550,26 @@ footer i
     
     .f1
     {
-        margin-top: 0px;
+        margin-top: 9px;
         margin-right: 30px;
         margin-left: 30px;
     }
     
     .f2
     {
-        margin-top: 0px;
+        margin-top: 9px;
         margin-right: 30px;
         margin-left: 30px;
     }
     
     .mention p
     {
-        margin-top: 17px;
+        margin-top: 27px;
         margin-right: 30px;
+    }
+
+    .contact
+    {
+        margin-top: 27px;
     }
 }
