@@ -1,19 +1,7 @@
 $violet:#9356DC;
 $rose:#dd30ac;
 $vert:#99E2D0;
-@font-face
-{
-    
-    font-family: "Roboto";
-    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-}
 
-@font-face
-{
-    
-    font-family: "Shrikhand";
-    src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-}
 #all
 {
     background-color: red;
@@ -28,17 +16,20 @@ body
 
 .logo
 {
-    font-size: 25px;
+    font-size: 39px;
     display: flex;
     justify-content: center;
+    font-family: 'Shrikhand', cursive;
+    height: 80px;
 }
 
-.logo img
+.logo a
 {
-    width: 45%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 5px;
+   text-decoration: none;
+   height: 46px;
+   width: 177px;
+   padding-top: 20px;
+   color: black;   
 }
 
 .partie1
@@ -111,7 +102,7 @@ body
     margin-right: 25%;
     text-align: center;
     height: 45px;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 50%;
     margin-top: 15px;
     margin-bottom: 35px;
@@ -123,7 +114,8 @@ body
 
 .presentaion button:hover
 {
-  background-color: black;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .partie2 h4
@@ -228,8 +220,7 @@ body
 
 .contenup1:hover
 {
-    transform: scale(1.03);
-   
+    
 }
 
 .contenup1 button
@@ -313,7 +304,7 @@ body
 }
 
 .et2:hover .et1 i{
-    color: white;
+    display: none;
 }
 
 footer
@@ -332,7 +323,7 @@ footer
 
 .contenufooter h4
 {
-    font-family: 'Shrikhand';
+    font-family: 'Shrikhand', cursive;
     font-size: 23px;
 }
 
@@ -366,6 +357,11 @@ footer
     margin-bottom: -6px;
 }
 
+.contact
+{
+    margin-top: 15px;
+}
+
 .contact a
 {
     text-decoration: none;
@@ -394,10 +390,6 @@ footer i
 
 @media all and (min-width: 700px)
 {
-    .logo img 
-    {
-        width: 33%;
-    }
     .contenup1 button
     {
         margin-left: 29%;
@@ -441,10 +433,7 @@ footer i
     {
 
     }
-    .logo img 
-    {
-        width: 27%;
-    }
+
     .partie2 h4 {
         margin-left: 2%;
         font-size: 21px;
@@ -483,12 +472,6 @@ footer i
 
 @media all and (min-width: 1000px)
 {
-
-    .logo img {
-        width: 23%;
-        height: 43px;
-    }
-
     .partie2
     {
         display: flex;
@@ -532,10 +515,11 @@ footer i
     .contenufooter
     {
         padding-top: 10px;
-        margin-left: 5%;
+        margin-left: 0%;
         color: white;
         padding-bottom: 20px;
         display: flex;  
+        justify-content: center;
     }
 
     .contenufooter img 
