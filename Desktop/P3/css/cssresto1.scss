@@ -22,10 +22,10 @@ body
 
 header
 {
-    display: flex;
+    
 }
 
-header a
+header i
 {
     text-decoration: none;
     color: black;
@@ -34,22 +34,25 @@ header a
     height: 50px;
     position: absolute;
     left: 35px;
-    top: 1%;
+    top: 35px;
     font-size: 20px;
 }
-
 .logo
 {
-    font-size: 25px;
-    display: flex;8
+    font-size: 39px;
+    display: flex;
     justify-content: center;
+    font-family: 'Shrikhand', cursive;
+    height: 80px;
 }
-.logo img
+
+.logo a
 {
-    width: 45%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 5px;
+   text-decoration: none;
+   height: 46px;
+   width: 177px;
+   padding-top: 20px;
+   color: black;   
 }
 
 .imagemenu img
@@ -118,7 +121,7 @@ header a
     position: absolute;
     z-index: 20;
     left: 5%;
-    top: 114px;
+    top: 119px;
 }    
 
 .entree2::after
@@ -130,7 +133,7 @@ header a
     position: absolute;
     z-index: 20;
     left: 5%;
-    top: 410px;
+    top: 419px;
 }
 
 .entree3::after
@@ -231,11 +234,6 @@ header a
    box-shadow: 0px 0px 8px #cdcdcd;
    border-radius: 15px;
    display: flex;
-   &:hover
-   {
-    background-color: red;
-
-   }
 }
 
 
@@ -254,13 +252,13 @@ header a
   .contenup1:hover
   {
       cursor: pointer;
-      transform: scale(1.03);
+      transform: scale(1.012);
   }
 
 .contenup1:hover .validation
 {
    display: flex;
-  transition: 2s;
+  transition: 1s;
    background-color: #99e2d0;
    width: 70px;  
    animation: myAnim 1s ease 0s 1 normal forwards;
@@ -283,6 +281,7 @@ header a
 {
     margin-top: 30px;
     margin-left: 3%;
+    width: 70%;
 }
 
 .menu b
@@ -293,24 +292,27 @@ header a
 .menu p
 {
     white-space: nowrap;
-    font-size: 19px;
+    font-size: 17px;
     margin-top: -5px;
     overflow: hidden;
+    text-overflow: ellipsis;
 } 
 
 .menu h4
 {
     white-space: nowrap;
-    font-size: 19px;
+    font-size: 16px;
     margin-top: -18px;
     font-weight: inherit;
     overflow: hidden;
+    text-overflow: ellipsis;
 } 
 
 .pricemenu 
 {
     font-size: 16px;
     margin-right: 7%;
+    margin-top: 30px;
 }
 
 .contenup1:hover .pricemenu
@@ -451,20 +453,20 @@ footer i
 
     .entree::after
     {
-        left: 6%;
-        top: 128px;
+        left: 5.8%;
+        top: 130px;
     }
 
     .entree2::after
     {
         left: 37.2%;
-        top: 128px;
+        top: 133px;
     }
 
     .entree3::after
     {
         left: 68.7%;
-        top: 128px;
+        top: 133px;
     }
     
     .p1
