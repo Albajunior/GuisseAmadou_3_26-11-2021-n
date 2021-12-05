@@ -332,9 +332,10 @@ body
    cursor: pointer;
 }
 
-.contenup1:hover
+.contenup1 a
 {
-    
+    text-decoration: none;
+    color: black; 
 }
 
 .contenup1 button
