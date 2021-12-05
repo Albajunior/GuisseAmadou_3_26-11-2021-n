@@ -14,6 +14,12 @@ body {
   min-width: 300px;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header i {
   text-decoration: none;
   color: black;
@@ -22,20 +28,17 @@ header i {
   height: 50px;
   position: absolute;
   left: 35px;
-  top: 4%;
+  top: 1%;
   font-size: 20px;
 }
 
 .logo {
-  font-size: 39px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Shrikhand', cursive;
-  height: 80px;
+    font-size: 39px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Shrikhand', cursive;
+    height: 80px;
+
 }
 
 .logo a {
@@ -43,15 +46,9 @@ header i {
   height: 46px;
   width: 177px;
   padding-top: 20px;
-  color: black;
+  color: black;   
 }
 
-.imagemenu img {
-  height: 290px;
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: -100px;
-}
 
 .titrep3 {
   display: -webkit-box;

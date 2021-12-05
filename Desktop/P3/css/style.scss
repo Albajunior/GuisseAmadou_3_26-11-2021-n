@@ -14,6 +14,116 @@ body
     min-width: 300px;
 }
 
+@-webkit-keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.spinner {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  -webkit-animation: spinner 2s linear;
+          animation: spinner 2s linear;
+  visibility: hidden;
+}
+
+.spinner__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: spinner-border 2s linear;
+          animation: spinner-border 2s linear;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.spinner__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
 .logo
 {
     font-size: 39px;
@@ -106,10 +216,14 @@ body
     width: 50%;
     margin-top: 15px;
     margin-bottom: 35px;
-    background:linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    background:linear-gradient(180deg, #ff79da 9%, #9356dc 100%);
     color: white;
     font-size: 16px;
     max-width: 280px;
+    border-top-color: #ff79da;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #cca7f9;
 }
 
 .presentaion button:hover
@@ -410,10 +524,6 @@ footer i
         margin-right: 29px;
     }
 
-    .partie3
-    {
-        padding-left: 3%;
-    }
     #contain
     {
         display: flex;
@@ -424,6 +534,10 @@ footer i
     {
         width: 45%;
         margin-right: 5%;
+    }
+
+    .partie2 h4 {
+        margin-left: 4%;
     }
 }
 
@@ -450,7 +564,7 @@ footer i
     }
 }
 
-@media all and (max-width: 352px)
+@media screen and (max-width: 352px)
 {
 
     .presentaion h3 
