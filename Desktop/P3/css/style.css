@@ -383,27 +383,29 @@ body {
 }
 
 .et1 i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: black;
   margin-top: 7px;
   font-size: 28px;
 }
 
+.et1 i:hover {
+  color: transparent;
+}
+
 .et2 {
   color: transparent;
-  margin-top: -30.5px;
-  font-size: 29px;
+  margin-top: -32.5px;
+  font-size: 31px;
+  margin-left: -1.4px;
+}
+
+.et2:hover .et1 i {
+  display: none;
 }
 
 .et2:hover {
   color: #9356DC;
   cursor: pointer;
-}
-
-.et2:hover .et1 i {
-  display: none;
 }
 
 footer {

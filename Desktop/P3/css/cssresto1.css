@@ -14,12 +14,6 @@ body {
   min-width: 300px;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 header i {
   text-decoration: none;
   color: black;
@@ -28,17 +22,20 @@ header i {
   height: 50px;
   position: absolute;
   left: 35px;
-  top: 1%;
+  top: 35px;
   font-size: 20px;
 }
 
 .logo {
-    font-size: 39px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Shrikhand', cursive;
-    height: 80px;
-
+  font-size: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Shrikhand', cursive;
+  height: 80px;
 }
 
 .logo a {
@@ -46,9 +43,15 @@ header i {
   height: 46px;
   width: 177px;
   padding-top: 20px;
-  color: black;   
+  color: black;
 }
 
+.imagemenu img {
+  height: 290px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: -100px;
+}
 
 .titrep3 {
   display: -webkit-box;
@@ -100,7 +103,7 @@ header i {
   position: absolute;
   z-index: 20;
   left: 5%;
-  top: 114px;
+  top: 119px;
 }
 
 .entree2::after {
@@ -111,7 +114,7 @@ header i {
   position: absolute;
   z-index: 20;
   left: 5%;
-  top: 410px;
+  top: 419px;
 }
 
 .entree3::after {
@@ -207,10 +210,6 @@ header i {
   display: flex;
 }
 
-.contenup1:hover {
-  background-color: red;
-}
-
 @-webkit-keyframes myAnim {
   0% {
     -webkit-transform: scaleX(0.4);
@@ -243,16 +242,16 @@ header i {
 
 .contenup1:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.012);
+          transform: scale(1.012);
 }
 
 .contenup1:hover .validation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
   background-color: #99e2d0;
   width: 70px;
   -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
@@ -283,6 +282,7 @@ header i {
 .menu {
   margin-top: 30px;
   margin-left: 3%;
+  width: 70%;
 }
 
 .menu b {
@@ -291,22 +291,25 @@ header i {
 
 .menu p {
   white-space: nowrap;
-  font-size: 19px;
+  font-size: 17px;
   margin-top: -5px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu h4 {
   white-space: nowrap;
-  font-size: 19px;
+  font-size: 16px;
   margin-top: -18px;
   font-weight: inherit;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pricemenu {
   font-size: 16px;
   margin-right: 7%;
+  margin-top: 30px;
 }
 
 .contenup1:hover .pricemenu {
@@ -361,23 +364,37 @@ header i {
   }
 }
 
-.partie3 button {
-  margin-left: 25%;
-  margin-right: 25%;
+.btncmd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btncmd button {
   text-align: center;
   height: 45px;
-  border-radius: 15px;
+  border-radius: 25px;
   width: 50%;
   margin-top: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
   font-size: 16px;
   max-width: 280px;
+  border-top-color: #ff79da;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #cca7f9;
 }
 
-.partie3 button:hover {
+.btncmd button:hover {
   opacity: 0.8;
   cursor: pointer;
   -webkit-transition: .3s;
@@ -387,9 +404,8 @@ header i {
 }
 
 footer {
-  background-color: #353535;
+  background-color: #2f2e2e;
   font-size: 17px;
-  width: 100%;
 }
 
 .contenufooter {
@@ -400,8 +416,18 @@ footer {
 }
 
 .contenufooter h4 {
-  font-family: 'Shrikhand';
+  font-family: 'Shrikhand', cursive;
   font-size: 23px;
+}
+
+.titrefooter {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  font-size: 20px;
+}
+
+.titrefooter a {
+  text-decoration: none;
 }
 
 .f1 {
@@ -419,6 +445,15 @@ footer {
   margin-bottom: -6px;
 }
 
+.contact {
+  margin-top: 15px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+
 footer i {
   font-weight: 931;
   margin-right: 8px;
@@ -434,16 +469,16 @@ footer i {
     width: 100%;
   }
   .entree::after {
-    left: 6%;
-    top: 128px;
+    left: 5.8%;
+    top: 130px;
   }
   .entree2::after {
     left: 37.2%;
-    top: 128px;
+    top: 133px;
   }
   .entree3::after {
     left: 68.7%;
-    top: 128px;
+    top: 133px;
   }
   .p1 {
     width: 31%;
@@ -456,15 +491,46 @@ footer i {
   .p3 {
     width: 31%;
   }
-  .partie3 button {
-    margin-left: 31%;
-  }
   .partie3 {
     margin-left: 6%;
     margin-right: 6%;
   }
   .contenup1:hover .validation {
     width: 60px;
+  }
+  .contenufooter {
+    padding-top: 10px;
+    margin-left: 0%;
+    color: white;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contenufooter img {
+    width: 20%;
+  }
+  .contenufooter h4 {
+    font-size: 23px;
+  }
+  .f1 {
+    margin-top: 9px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .f2 {
+    margin-top: 9px;
+    margin-right: 30px;
+  }
+  .mention p {
+    margin-top: 27px;
+    margin-right: 30px;
+  }
+  .contact {
+    margin-top: 27px;
   }
 }
 
@@ -477,9 +543,6 @@ footer i {
 @media all and (min-width: 860px) {
   .logo img {
     width: 27%;
-  }
-  footer {
-    padding-left: 3%;
   }
 }
 

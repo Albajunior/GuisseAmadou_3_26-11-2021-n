@@ -373,16 +373,21 @@ header i
 {
    
 }
-.partie3 button
+.btncmd
 {
-    margin-left: 25%;
-    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btncmd button
+{
     text-align: center;
     height: 45px;
     border-radius: 25px;
     width: 50%;
     margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     background:linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
     color: white;
     font-size: 16px;
@@ -393,7 +398,7 @@ header i
     border-bottom-color: #cca7f9;
 }
 
-.partie3 button:hover
+.btncmd button:hover
 {
     opacity: 0.8;
     cursor: pointer;
@@ -403,9 +408,8 @@ header i
 
 footer
 {
-    background-color: #353535;
-    font-size: 17px;
-    width: 100%;
+    background-color: #2f2e2e;
+    font-size: 17px;  
 }
 
 .contenufooter
@@ -418,9 +422,22 @@ footer
 
 .contenufooter h4
 {
-    font-family: 'Shrikhand';
+    font-family: 'Shrikhand', cursive;
     font-size: 23px;
 }
+
+.titrefooter 
+{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 20px;    
+}
+
+.titrefooter a
+{
+    text-decoration: none;
+}
+
 .f1
 {
     display: block ruby;
@@ -438,6 +455,18 @@ footer
     margin-top: -3px;
     margin-bottom: -6px;
 }
+
+.contact
+{
+    margin-top: 15px;
+}
+
+.contact a
+{
+    text-decoration: none;
+    color: white;
+}
+
 footer i
 {
     font-weight: 931;
@@ -491,9 +520,6 @@ footer i
     {
         width: 31%;
     }
-
-    .partie3 button {
-        margin-left: 31%;}
     
     .partie3
     {
@@ -505,6 +531,50 @@ footer i
     { 
         width: 60px;
     }    
+
+    .contenufooter
+    {
+        padding-top: 10px;
+        margin-left: 0%;
+        color: white;
+        padding-bottom: 20px;
+        display: flex;  
+        justify-content: center;
+    }
+
+    .contenufooter img 
+    {
+        width: 20%;
+    }
+    
+    .contenufooter h4
+    {
+        font-size: 23px;
+    }
+    
+    .f1
+    {
+        margin-top: 9px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    .f2
+    {
+        margin-top: 9px;
+        margin-right: 30px;
+    }
+    
+    .mention p
+    {
+        margin-top: 27px;
+        margin-right: 30px;
+    }
+
+    .contact
+    {
+        margin-top: 27px;
+    }
 }
 
 @media all and (min-width: 700px)
@@ -519,16 +589,9 @@ footer i
 
 @media all and (min-width: 860px)
 {
-
     .logo img 
     {
         width: 27%;
-    }
-
-    footer 
-    {
-        
-        padding-left: 3%;
     }
 }
 
