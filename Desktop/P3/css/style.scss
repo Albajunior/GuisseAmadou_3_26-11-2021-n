@@ -137,14 +137,8 @@ body
 {
    text-decoration: none;
    height: 46px;
-   width: 177px;
    padding-top: 20px;
    color: black;   
-}
-
-.partie1
-{
-   
 }
 
 .lignerecherche
@@ -156,6 +150,7 @@ body
     height: 45px;
     margin-top: 12px;
 }
+
 .contenu
 {
     display: flex;
@@ -164,6 +159,7 @@ body
     margin-right: 25%;
     min-width: 146px;
 }
+
 .contenu i
 {
     margin-top: 16px;
@@ -238,11 +234,6 @@ body
     font-size: 18px;
 }
 
-.titrep2
-{
-
-}
-
 .contenup2
 {
     display: block;
@@ -256,53 +247,52 @@ body
     margin-right: 4%;
 }
 
-
-    .filter p 
-    {
-        font-size: 13px;
-        margin-right: 15px;
-        margin-left: 20px;
-        font-weight: bold;
-        margin-top: 20px;
-    }
+.filter p 
+{
+    font-size: 13px;
+    margin-right: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}    
     
-    .filter
-    {
-        display: flex;
-        margin: 7px 15px 25px 15px;
-        border-radius: 20px;
-        align-items: center;
-        height: 75px;
-        background-color: #e3e3e38f;
-        box-shadow: 0px 1px 6px 0.5px #a8a6a6;
-    }
+.filter
+{
+    display: flex;
+    margin: 7px 15px 25px 15px;
+    border-radius: 20px;
+    align-items: center;
+    height: 75px;
+    background-color: #e3e3e38f;
+    box-shadow: 0px 1px 6px 0.5px #a8a6a6;        
+}    
 
-    .filter:hover
-    {
-        background-color: rgb(217, 193, 238);
-    }
+.filter:hover
+{
+    background-color: rgb(217, 193, 238);
+}    
 
-    .filter i
-    {
-        margin-left: 12px;
-        color: #c5bfbf;
-    }
+.filter i
+{
+    margin-left: 12px;
+    color: #c5bfbf;
+}
 
-    .filter-icon
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 19px;
-        height: 19px;
-        border-radius: 20px;
-        background-color: #9356DC;
-        color: white;
-        margin-left: -8px;
-        transition: all .1s ease-in-out;
-        font-size: 20px;
-    }
-    
+.filter-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 20px;
+    background-color: #9356DC;
+    color: white;
+    margin-left: -8px;
+    transition: all .1s ease-in-out;
+    font-size: 20px;        
+}   
+
 .partie3
 {
     background-color: #F2F2F2;
@@ -310,11 +300,6 @@ body
     padding-top: 25px;
     margin-top: 60px;
     padding-bottom: 35px;
-}
-
-.titrep3
-{
-    
 }
 
 #contain
@@ -352,7 +337,6 @@ body
     font-size: 14px;
     font-weight: bold;
 }
-
 
 .image
 {
@@ -561,11 +545,6 @@ footer i
     .contenup1 button
     {
         margin-left: 29%;
-    }
-
-    footer 
-    {
-       
     }
 }
 
