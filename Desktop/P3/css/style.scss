@@ -22,6 +22,8 @@ body
   70% {
     opacity: 0.9;
   }
+
+
   100% {
     opacity: 0;
     visibility: hidden;
@@ -131,6 +133,7 @@ body
     justify-content: center;
     font-family: 'Shrikhand', cursive;
     height: 80px;
+    margin-left: -10px;
 }
 
 .logo a
